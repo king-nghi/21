@@ -30,6 +30,14 @@ input {
   opacity: 1;
 }
 
+/* Buttons Container */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 button {
   background-color: transparent;
   color: #fff;
@@ -37,7 +45,6 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  margin: 5px;
   transition: all 0.3s ease;
 }
 
@@ -45,6 +52,7 @@ button:hover {
   background-color: #fff;
   color: #000;
 }
+
 
 /* Card Styles */
 .card {
@@ -110,9 +118,46 @@ button:hover {
   margin-top: 20px;
 }
 
-.game-button {
-  display: block;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px;
 }
+
+.game-button {
+    width: 150px; /* Optional: Set a consistent width for buttons */
+    text-align: center;
+    justify-content: center;
+    gap: 10px; /* Space between buttons in the same row */
+    display: block; /* Ensure buttons or inputs stack naturally */
+}
+
+.button-group {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Ensure stacking is vertical */
+  align-items: center; /* Horizontally center the items */
+  gap: 10px; /* Add space between items */
+  margin-top: 20px;
+}
+
+button.game-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.game-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
 
 /* Game Container */
 .game-container {
