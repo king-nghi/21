@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Welcome to 21!</h1>
+        <input type="number" id="deck-input" placeholder="Count of decks in shoe" min="1">
+        <div class="game-button">
+            <button id="deck-count">Enter</button>
+        </div>
+        <input type="number" id="balance-input" placeholder="Initial balance (100 default)">
+        <div id="game-button">
+            <button id="set-balance">Balance</button><br>
+        </div>
+        <input type="number" id="bet-input" placeholder="Bet amount (5 minimum)" min="5">
+        <div id="game-button">
+            <button id="place-bet">Bet</button><br>
+        </div>
+        <div id="balance-info">Balance: $<span id="balance">100</span></div>
+        <div id="bet-info">Bet: $<span id="bet">0</span></div>
+        <div class="game-button">
+            <button id="start-game">Start</button>
+            <button id="reset-game">Reset</button>
+        </div>
+            <div class="game-container">
+            <div class="hand" id="player-hand">
+                <div class="hand-name">Player Hand</div>
+            </div>
+            <div class="hand" id="dealer-hand">
+                <div class="hand-name">Dealer Hand</div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="game-button" id="hit-button">Hit</button>
+            <button class="game-button" id="stand-button">Stand</button>
+            <button class="game-button" id="split-button">Split</button>
+            <button class="game-button" id="deal-new-hands">Deal</button>
+        </div>
+        <div>
+            <button class="game-button" id="toggle-counts">Counts</button>
+        </div>
+        <div class="count-info" id="count-info">
+            Running: 0<br>
+            True: 0<br>
+            Card: 0<br>
+        </div>
+        <div>
+            <button class="game-button" id="toggle-cards-played">Cards Dealt</button>
+        </div>
+        <div class="cards-played" id="cards-played"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
